@@ -1,0 +1,20 @@
+/* ---------------------------------------------------------------- */
+/* 36.Home Svg Pattern 4                              
+/* ---------------------------------------------------------------- */
+#svg-pattern-4 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	pointer-events: none;
+}
+/* ------------------------------------------------------------- */
+/* Responsive Media Query
+ * Extra large devices (large desktops, 1200px and up)
+/* ---------------------------------------------------------------- */
+@media only screen and (min-width: 1200px) {
+	#svg-pattern-4 {
+		bottom: -60px;
+	}
+}

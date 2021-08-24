@@ -1,0 +1,72 @@
+/* ---------------------------------------------------------------- */
+/* 12.Services                                                
+/* ---------------------------------------------------------------- */
+.services-box {
+    z-index: 11;
+    padding: 30px;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    transition: all 0.5s ease;
+    background: $color_white;
+    box-shadow: 0 23px 49px 0 $color_shadow;
+    .services-icon {
+        span {
+            position: relative;
+            display: inline-block;
+            &:before {
+                font-size: 80px;
+                margin-left: 0;
+                display: inline-block;
+                color: $color_primary;
+            }
+        }
+    }
+    .services-body {
+        h5 {
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 30px;
+        }
+    }
+    &:after, &:before {
+        width: 250px;
+        height: 250px;
+        content: "";
+        top: -15px;
+        right: -100%;
+        z-index: -11;
+        border-radius: 50%;
+        position: absolute;
+        transition: all 0.5s ease;
+        background: rgba($color_white, 0.08);
+    }
+    &:after {
+        transition-delay: 0;
+    }
+    // Hover
+    &:hover {
+        background: $color_dark_bg;
+        &:after {
+            top: -50px;
+            right: -130px;
+            transition-delay: 0.5s;
+        }
+        &:before {
+            top: -30px;
+            right: -150px;
+        }
+        .services-body {
+            h5 {
+                color: $color_white;
+            }
+            p {
+                color: $color_white;
+                opacity: 0.8;
+            }
+        }
+    }
+}

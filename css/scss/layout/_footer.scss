@@ -1,0 +1,182 @@
+/* ---------------------------------------------------------------- */
+/* 20.Footer                            
+/* ---------------------------------------------------------------- */
+#footer {
+    background: $color_dark_blue;
+    #footer-top {
+        padding: 80px 0 50px 0;
+        .footer-projects {
+            margin-right: 0;
+            .footer-project-item {
+                margin-bottom: 20px;
+            }
+        }
+        .footer-widget {
+            margin-bottom: 30px;
+            h5 {
+                color: $color_white;
+                position: relative;
+                padding-bottom: 10px;
+                margin-bottom: 30px;
+                display: inline-block;
+                &:after {
+                    content: "";
+                    width: 50px;
+                    height: 2px;
+                    margin-top: 10px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background: $color_primary;
+                }
+            }
+            p {
+                color: $color_footer_link;
+            }
+            ul.footer-social {
+                display: flex;
+                margin-top: 30px;
+                li {
+                    margin-right: 10px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    a {
+                        i {
+                            color: $color_white;
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 3px;
+                            line-height: 50px;
+                            text-align: center;
+                            transition: all 0.25s ease;
+                            background: rgba($color_white, 0.03);
+                        }
+                    }
+                    &:nth-child(1) {
+                        a {
+                           &:hover {
+                                i {
+                                    background: $color_facebook;
+                                    color: $color_white !important;
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        a {
+                            &:hover {
+                               i {
+                                    background: $color_twitter;
+                                    color: $color_white !important;
+                               }
+                            }
+                        }
+                    }
+                    &:nth-child(3) {
+                        a {
+                            &:hover {
+                                i {
+                                    background: $color_instagram;
+                                    color: $color_white !important;
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(4) {
+                        a {
+                            &:hover {
+                                i {
+                                    background: $color_pinterest;
+                                    color: $color_white !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            ul.footer-links {
+                li{
+                    margin-bottom: 10px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    a {
+                        color: $color_footer_link;
+                        position: relative;
+                        transition: all 0.25s ease;
+                        &:before {
+                            content: "\f061";
+                            display: inline-block;
+                            font-family: "Font Awesome 5 Free";
+                            font-weight: 600;
+                            font-size: 14px;
+                            color: $color_white;
+                            transition: all 0.25s ease;
+                            margin-right: 20px;
+                        }
+                        &:hover {
+                            color: $color_primary;
+                            text-decoration: underline;
+                            &:before {
+                                margin-left: 10px;
+                                color: $color_primary;
+                            }
+                        }
+                    }
+                }
+            }
+            .newsletter-form-wrap {
+                p {
+                    margin-bottom: 20px;
+                }
+                .newsletter-form-control {
+                    display: block;
+                    width: 100%;
+                    border: none;
+                    padding: 14px 20px;
+                    border-radius: 5px;
+                    color: $color_white;
+                    background: rgba($color_white,0.05);
+                }
+                .newsletter-form-btn {
+                    padding: 12px 70px 12px 24px;
+                    display: block;
+                    width: 100%;
+                    text-transform: capitalize;
+                    transition: all 0.25s linear;
+                    text-align: center;
+                    border-radius: 3px;
+                    position: relative;
+                    background: $color_primary;
+                    color: $color_white;
+                    border:none;
+                    &:hover {
+                        background: darken($color_primary, 10%);
+                        color: $color_white;
+                        transform: translateY(-5px);
+                    }
+                    i {
+                        top: 0;
+                        right: 0;
+                        width: 48px;
+                        height: 48px;
+                        text-align: center;
+                        line-height: 48px;
+                        display: inline-block;
+                        position: absolute;
+                        border-radius: 0 3px 3px 0;
+                        background: rgba($color_white,0.2);
+                    }
+                }
+            }
+        }
+    }
+    #copyright {
+        background: rgba($color_white,0.05);
+        padding: 30px 0;
+        p {
+            color: $color_footer_link;
+        }
+    }
+}

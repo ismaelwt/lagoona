@@ -1,0 +1,95 @@
+/* -------------------------------------------------------------------
+ * Template Name         : Langona - Business Agency HTML Template
+ * Theme Author Name     : Yucel Yilmaz
+ * Created Date          : 28 April 2020
+ * Version               : 1.0
+------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------
+   Base                               
+   ------------------------ /
+ * 01.Base
+ * 02.Typography
+ * 03.Helper Class
+   ------------------------ /
+   Components                               
+   ------------------------ /
+ * 04.Buttons  
+ * 05.Animations 
+ * 06.Form(Input, Comment)
+ * 07.Pagination 
+ * 08.Preloader
+   ------------------------ /
+   Layout                               
+   ------------------------ /
+ * 09.Header
+ * 10.Hero
+ * 11.About
+ * 12.Services
+ * 13.Work Process
+ * 14.Portfolio
+ * 15.Counters
+ * 16.Our Team
+ * 17.Our Clients
+ * 18.Our Pricing
+ * 19.Latest Blog
+ * 20.Footer
+ * 21.Breadcrumb
+ * 22.Sidebar
+   ------------------------ /
+   Inner Pages                               
+   ------------------------ /
+ * 23.Blog Single Post
+ * 24.Contact Us Page
+ * 25.Portfolio Single
+ * 26.404 Page
+ * 27.Services Detail Page
+ * 28.About Page
+   ------------------------ /
+   Home Pages                               
+   ------------------------ /
+ * 29.Home Slider Background 
+ * 30.Home Particles Background 
+ * 31.Home Ripples Background 
+ * 32.Home Youtube Bg Video
+ * 33.Home Svg Pattern 1  
+ * 34.Home Svg Pattern 2  
+ * 35.Home Svg Pattern 3
+ * 36.Home Svg Pattern 4
+ * 37.Intro Page
+
+------------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------- */
+/* 01.Base                               
+/* ---------------------------------------------------------------- */
+body, html {
+    font : {
+        size: 16px;
+        family: $font_text; 
+        weight: 400;
+    }
+    color: $body_text;
+    margin: 0;
+    padding: 0;
+}
+::selection {
+    background: $color_secondary;
+    color: $color_white;
+}
+a:link, a:hover, a:active, a:visited {
+    text-decoration: none;
+}
+ul, ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+textarea, textarea:focus, input, input:focus, button, button:focus {
+    outline: none;
+    resize: inherit;
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: auto;
+}

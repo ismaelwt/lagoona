@@ -1,0 +1,149 @@
+/* ---------------------------------------------------------------- */
+/* 04.Buttons                                                     
+/* ---------------------------------------------------------------- */
+.default-primary-btn {
+    padding: 18px 30px;
+    display: inline-block;
+    text-transform: capitalize;
+    transition: all 0.25s linear;
+    text-align: center;
+    border-radius: 3px;
+    position: relative;
+    background: $color_primary;
+    color: $color_white;
+    border: none;
+    outline: none;
+    &:hover {
+        background: darken($color_primary, 10%);
+        color: $color_white;
+        transform: translateY(-5px);
+    }
+}
+// Icons Buttons 
+.primary-icon-btn {
+    padding: 18px 90px 18px 30px;
+    display: inline-block;
+    text-transform: capitalize;
+    transition: all 0.25s linear;
+    text-align: center;
+    border-radius: 3px;
+    position: relative;
+    background: $color_primary;
+    color: $color_white;
+    border:none;
+    &:hover {
+        background: darken($color_primary, 10%);
+        color: $color_white;
+        transform: translateY(-5px);
+    }
+    i {
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        display: inline-block;
+        position: absolute;
+        border-radius: 0 3px 3px 0;
+        background: rgba($color_white,0.2);
+    }
+}
+.secondary-icon-btn {
+    padding: 18px 90px 18px 30px;
+    display: inline-block;
+    text-transform: capitalize;
+    transition: all 0.25s linear;
+    text-align: center;
+    border-radius: 3px;
+    position: relative;
+    background: $color_secondary;
+    color: $color_white;
+    border:none;
+    &:hover {
+        color: $color_white;
+        background: darken($color_secondary, 10%);
+        transform: translateY(-5px);
+    }
+    i {
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        display: inline-block;
+        position: absolute;
+        border-radius: 0 3px 3px 0;
+        background: rgba($color_white,0.2);
+    }
+}
+.scroll-top-btn {
+    right: 10px;
+    bottom: 0;
+    opacity: 0;
+    z-index: 100;
+    position: fixed;
+    visibility: hidden;
+    text-align: center;
+    border-radius: 3px;
+    display: inline-block;
+    text-transform: capitalize;
+    transition: all 0.25s linear;
+    background: $color_primary;
+    color: $color_white;
+    &:hover {
+        background: darken($color_primary, 10%);
+        color: $color_white;
+        transform: translateY(-5px);
+    }
+    i {
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        display: inline-block;
+        border-radius: 0 3px 3px 0;
+        background: rgba($color_white,0.2);
+    }
+    span {
+        width: 60px;
+        padding: 10px;
+        font-size: 12px;
+        display: block;
+    }
+    &.active {
+        opacity: 1;
+        bottom: 20px;
+        visibility: visible;
+    }
+}
+.get-offer-modal-btn {
+    padding: 18px 90px 18px 30px;
+    display: inline-block;
+    text-transform: capitalize;
+    transition: all 0.25s linear;
+    text-align: center;
+    border-radius: 3px;
+    position: relative;
+    background: $color_primary;
+    color: $color_white;
+    border:none;
+    &:hover {
+        background: darken($color_primary, 10%);
+        color: $color_white;
+        transform: translateY(-5px);
+    }
+    i {
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        display: inline-block;
+        position: absolute;
+        border-radius: 0 3px 3px 0;
+        background: rgba($color_white,0.2);
+    }
+}

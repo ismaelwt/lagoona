@@ -1,0 +1,162 @@
+/* ---------------------------------------------------------------- */
+/* 25.Portfolio Single                           
+/* ---------------------------------------------------------------- */
+.portfolio-single-slider {
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    .owl-stage-outer {
+        border-radius: 5px;
+    }
+    .owl-nav {
+        margin-top: 0;
+        .owl-prev, .owl-next {
+            margin: 0;
+            position: absolute;
+            width: 56px;
+            top: 50%;
+            height: 56px;
+            line-height: 46px;
+            border-radius: 5px;
+            text-align: center;
+            background: $color_primary !important;
+            color: $color_white !important;
+            transition: all 0.25s ease;
+            transform: translateY(-50%);
+            &:hover {
+                background: $color_dark_blue;
+                color: $color_white;  
+            }
+        }
+        .owl-prev {
+            left: 15px;
+            z-index: 15;
+        }
+        .owl-next {
+            right: 15px;
+        }
+    }
+}
+.portfolio-details-text {
+    margin-bottom: 30px;
+    p {
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.portfolio-page-details {
+    padding: 30px;
+    text-align: left;
+    position: relative;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    background: $color_white;
+    box-shadow: 0 23px 49px 0 $color_shadow;
+}
+.project-details-widget {
+    margin-bottom: 30px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    .project-info {
+        > li {
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            > span {
+                text-align: left;
+                flex: 0 0 60%;
+            }
+            > span::before {
+                content: ":";
+                padding-left: 10px;
+                padding-right:10px;
+            }
+            > b {
+                font : {
+                    family: $font_heading;
+                    size: 1rem;
+                    weight: 700;
+                }
+                text-transform: capitalize;
+                color: $color_black
+            }
+        }
+    }
+    .project-share {
+        display: flex;
+        li {
+            margin-right: 10px;
+            a {
+                width: 40px;
+                height: 40px;
+                color: $color_black;
+                line-height: 40px;
+                margin: 0 5px 0 0;
+                border-radius: 3px;
+                text-align: center;
+                display: inline-block;
+                background: $color_white;
+                transition: all 0.5s ease;
+                box-shadow: 0 10px 25px 0 $color_shadow;
+            }
+            &:nth-child(1) {
+                a {
+                    color: $color_facebook;
+                    &:hover {
+                        background: $color_facebook;
+                        color: $color_white !important;
+                    }
+                }
+            }
+            &:nth-child(2) {
+                a {
+                    color: $color_twitter;
+                    &:hover {
+                        background: $color_twitter;
+                        color: $color_white !important;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                a {
+                    color: $color_instagram;
+                    &:hover {
+                        background: $color_instagram;
+                        color: $color_white !important;
+                    }
+                }
+            }
+            &:nth-child(4) {
+                a {
+                    color: $color_pinterest;
+                    &:hover {
+                        background: $color_pinterest;
+                        color: $color_white !important;
+                    }
+                }
+            }
+        }
+    }
+}
+.latest-project-item {
+    position: relative;
+    border-radius: 5px;
+    display: inline-block;
+    img {
+        border-radius: 5px;
+        display: inline-block;
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+ * Medium devices (tablets, less than 992px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width: 991.98px) {
+    .portfolio-page-details {
+        margin-top: 30px;
+    }
+}

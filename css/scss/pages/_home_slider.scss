@@ -1,0 +1,147 @@
+/* ---------------------------------------------------------------- */
+/* 29.Home Slider Background                 
+/* ---------------------------------------------------------------- */
+#heroSliderContainer {
+    z-index: 32;
+    display: flex;
+    overflow: hidden;
+    min-height: 100vh;
+    position: relative;
+    align-items: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+    .vegas-overlay {
+        background: $color_dark_bg;
+        opacity: 0.75;
+    }
+}
+#hero-slider-two {
+    z-index: 32;
+    .hero-slider {
+        &.owl-carousel {
+            .owl-nav {
+                 margin-top: 0;
+            }
+            button.owl-next, button.owl-prev {
+                top: 50%;
+                margin: 0;
+                padding: 0;
+                width: 60px;
+                height: 60px;
+                color: $color_white;
+                border-radius:3px;
+                text-align: center;
+                line-height: 60px;
+                position: absolute;
+                display: inline-block;
+                background: $color_primary;
+                transition: all 0.5s ease;
+                transform: translateY(-50%);
+                &:hover {
+                    background: darken($color_primary, 10%);
+                    color: $color_white;
+                }
+            }
+            button.owl-next{
+                right: 15px;
+              
+            }
+            button.owl-prev {
+                left: 15px;
+            }
+            .owl-dots {
+                position: absolute;
+                bottom: 15px;
+                left: 50%;
+                transform: translateX(-50%);
+                .owl-dot {
+                    span {
+                        width: 10px;
+                        height: 10px;
+                        margin: 0 5px;
+                        display: block;
+                        border-radius: 3px;
+                        background: $color_white;
+                        transition: all .25s ease;
+                    }
+                    &.active {
+                        span {
+                            width: 10px;
+                            height: 20px;
+                            background: $color_primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .item {
+        display: flex;
+        overflow: hidden;
+        max-width: 100%;
+        width: 100%;
+        z-index: 32;
+        object-fit: scale-down;
+        object-position: center;
+        min-height: 100vh;
+        position: relative;
+        align-items: center;
+        background-size: cover;
+        background-repeat:no-repeat;
+        background-position:center center;
+        &:before {
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            content: "";
+            opacity: 0.75;
+            z-index: -32;
+            position: absolute;
+            background: $color_dark_bg;
+        }
+    }
+    .owl-item {
+        .hero-sup-title, .hero-section-title,.hero-section-subtitle, .primary-icon-btn {
+            opacity: 0;
+            visibility: hidden;
+        }
+        &.active {
+            .hero-section-inner {
+                .hero-sup-title, .hero-section-title,.hero-section-subtitle, .primary-icon-btn {
+                    animation: fadeInUp 1s ease forwards;
+                    visibility: visible;
+                }
+                .hero-sup-title {
+                    animation-delay: 0s;
+                }
+                .hero-section-title {
+                    animation-delay: 0.2s;
+                }
+                .hero-section-subtitle {
+                    animation-delay: 0.4s;
+                }
+                .primary-icon-btn {
+                    animation-delay: 0.6s;
+                }
+            }
+        }
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+ * Small devices (landscape phones, less than 768px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width:767.98px) {
+    #hero-slider-two {
+        .hero-slider {
+            &.owl-carousel {
+                .owl-nav {
+                     display: none;
+                }
+            }
+        }
+    }
+}

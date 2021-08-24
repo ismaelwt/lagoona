@@ -1,0 +1,119 @@
+/* ---------------------------------------------------------------- */
+/* 16.Our Team                        
+/* ---------------------------------------------------------------- */
+.team-item {
+    padding: 30px;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    text-align: center;
+    transition: all 0.5s ease;
+    background: $color_white;
+    box-shadow: 0 23px 49px 0 $color_shadow;
+    .team-img {
+        margin-bottom: 30px;
+        position: relative;
+        display: inline-block;
+        &:after {
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 14;
+            position: absolute;
+            background: url(../img/team/team-img-shape.png) no-repeat;
+            background-size: cover;
+        }
+        img {
+            border-radius: 5px;
+            display: inline-block;
+            box-shadow: 0 23px 49px 0 $color_shadow;
+        }
+    }
+    .team-body {
+        h6 {
+            font-size: 28px;
+            color: $color_primary;
+        }
+        h5 {
+            margin-bottom: 5px;
+        }
+        span {
+            display: block;
+            margin-bottom: 30px;
+            font-weight: 600;
+            color: $color_primary;
+        }
+    }
+    ul.team-social {
+        display: flex;
+        justify-content: center;
+        li {
+            margin-right: 15px;
+            a {
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                border-radius: 3px;
+                text-align: center;
+                display: inline-block;
+                transition: all 0.5s ease;
+                background: $color_white;
+                box-shadow: 0 10px 25px 0 $color_shadow;
+                &:hover {
+                    color: $color_white !important;
+                }
+            }
+            &:nth-child(1) {
+                a {
+                    color: $color_facebook;
+                    &:hover {
+                        background: $color_facebook;
+                        transform: translateY(-5px);
+                    }
+                }
+            }
+            &:nth-child(2) {
+                a {
+                    color: $color_twitter;
+                    &:hover {
+                        background: $color_twitter;
+                        transform: translateY(-5px);
+                    }
+                }
+            }
+            &:nth-child(3) {
+                a {
+                    color: $color_instagram;
+                    &:hover {
+                        background: $color_instagram;
+                        transform: translateY(-5px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+ * Medium devices (tablets, less than 992px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width:991.98px) {
+    .team-item {
+        display: block;
+        text-align: center;
+        .team-img {
+            margin-right: 0;
+            margin-bottom: 30px;
+            display: inline-block;
+        }
+        ul.team-social {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
